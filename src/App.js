@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Checkouthandler from './Component/checkout/checkouthandler/checkouthandler';
+import MainHandler from './Component/main/Mainhandler/MainHandler';
+import Menuhendler from './Component/menu/Menuhendler/Menuhendler';
+import { Switch,Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+        <Switch>
+        <Route exact path="/" component={MainHandler}/>
+        <Route exact path="/menu" component={Menuhendler}/>
+        <Route exact path="/checkout" component={Checkouthandler}/>
+
+        </Switch>
+
+        {/* <Menuhendler/> */}
+        {/* <Checkouthandler/> */}
+    </>
+  )
 }
 
 export default App;

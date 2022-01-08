@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* .Bacground{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+} */
+.heading{
+  /* height: 56px; */
+  width: 100%;
+  background-color: rgb(55, 134, 202);
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 40px;
+  color: rgb(236, 236, 236);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cards{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+
+.card{
+  margin: 8px;
+  width: 200px;
+  border-radius: 12px;
+  /* padding-bottom: 15px; */
+  box-shadow:  0px 0px 4px 0 rgb(214, 214, 214);
+  transition: all 0.04s cubic-bezier(0.175 , 0.815 , 0 , 1);
+}
+
+.card:hover{
+  box-shadow: 0px 30px 18px -9px rgb(184, 184, 184);
+  transform: scale(1.05 ,1.05);
+}
+.card img{
+  height: 300px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card_detail{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.card_detail span{
+  margin: 5px;
+  text-transform: uppercase;
+  background-color: aliceblue;
+}
+
+.card_detail h3{
+  text-transform: capitalize;
+  margin: 5px;
+}
+
+.card_detail button{
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Content{
+  text-align: center;
+  font-size: 40px;
+}
+
+.Content p{
+  height: 50%;
+  justify-content: center; 
+  margin-top: 30px;
+  
+
+
+}
+.Content button{
+  text-decoration: none;
+  background: rgb(178, 178, 180);
+  /* color: rgb(0, 0, 0); */
+  padding: 5px;
+  
 }
